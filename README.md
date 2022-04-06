@@ -20,8 +20,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 Users should be able to:
 
--
-
 ### Screenshot
 
 ![desktop view](./src/images/desktop_view.png)
