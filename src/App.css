@@ -10,6 +10,9 @@
   padding: 1.25rem;
   
 }
+button{
+  user-select: none;
+}
 .container{
   position: relative;
  background-color: var(--dark-grayish-blue);
