@@ -9,18 +9,22 @@ function App() {
   const fetchData = async () => {
     const data = await fetch("https://api.adviceslip.com/advice");
     const result = await data.json();
-    setAdvice(result);
+    if (result.slip === undefined) {
+      return;
+    }
+    setAdvice(result.slip);
   };
 
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <div className="App">
       <div className="container">
-        <h1>Advice #{advice.slip.id}</h1>
+        <h1>Advice #{advice.id}</h1>
         <p>
-          <q>{advice.slip.advice}</q>
+          <q>{advice.advice}</q>
         </p>
         <picture>
           <source media="(min-width: 768px)" srcSet={pauseDesktop} />
