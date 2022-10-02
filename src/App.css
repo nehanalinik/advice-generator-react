@@ -1,0 +1,71 @@
+.App{
+  background-color: var(--dark-blue);
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: calc(100vh - 0.1px); */
+  padding: 1.25rem;
+  
+}
+button{
+  user-select: none;
+}
+.container{
+  position: relative;
+ background-color: var(--dark-grayish-blue);
+ padding: 1.25rem 1.25rem 3rem;
+ color: #fff;
+ border-radius: 0.75rem;
+ width: 550px;
+}
+.container h1{
+  color: var(--neon-green);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.container p{
+  font-size: 28px;
+  color: var(--light-cyan);
+  line-height: 1.5;
+  padding-bottom: 2.5rem;
+}
+
+.container picture {
+  margin: 0.2rem 0 2rem;
+}
+
+.button__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+ 
+}
+button{
+  position: absolute;
+  display: flex;
+  background-color: var(--neon-green);
+  border: none;
+  padding: 1.4rem;
+  border-radius: 50px;
+  bottom: -30px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+button:hover{
+ transform: rotate(180deg);
+  box-shadow: 0px 0px 30px 1px var(--neon-green);
+}
+
+@media screen and (min-width: 768px) {
+  .container{
+    width: 600px
+  }
+}
